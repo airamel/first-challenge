@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Space Mono">
+
+    <title>404 NOT FOUND</title>
+
+    <style>
+      .container {
+        width: 100%;
+        display: flex;
+        padding: 50px;
+        box-sizing: border-box;
+        flex-direction: row;
+      }
+
+      .containerL {
+        flex: 1;
+      }
+
+      .containerM {
+        flex: 1;
+      }
+
+      .notfound {
+        font-family: 'Inconsolata';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 25px;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+      }
+
+      .welcome {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 95px;
+        letter-spacing: -0.035em;
+      }
+
+      .page {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.035em;
+      }
+
+      .boton {
+        position: absolute;
+        width: 216px;
+        height: 68px;
+        background: #333333;
+        font-family: 'Space Mono';
+        color: white;
+      }
+
+      @media screen and (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .boton {
+          align-items: center;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+  <p class="notfound"> 404 NOT FOUND</p>
+    <div class="container">
+      <div class="containerM">
+        <img src="Scarecrow.png" width="100%" >
+      </div>
+      <div class="containerL">
+        <h1 class="welcome">I have a bad news for you </h1>
+          <p class="page">The page you are looking <br>
+            for might be removed or is <br>
+            temporarily unavaible</p>
+          <a href="homepage.html">
+          <button class="boton" type="submit" >BACK TO HOMEPAGE</button> </a>
+      </div>
+    </div>
+    <footer>created by: airamel</footer>
+  </body>
+</html>
